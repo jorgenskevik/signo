@@ -359,7 +359,7 @@ public class UserActivity extends AppCompatActivity implements ActionSheet.Actio
         } else {
             //gyldig
             //selectedColor = Color.rgb(132, 205, 182);
-            selectedColor = Color.rgb(239, 146, 72);
+            selectedColor = Color.rgb(164, 21, 99);
             selectedWhite = Color.rgb(255, 255, 255);
             int selectedBlack = Color.rgb(0, 0, 0);
 
@@ -572,7 +572,7 @@ public class UserActivity extends AppCompatActivity implements ActionSheet.Actio
                             expirationButton.setBackgroundColor(selectedColor);
                         } else {
                             //gyldig
-                            selectedColor = Color.rgb(239, 146, 72);
+                            selectedColor = Color.rgb(164, 21, 99);
                             selectedWhite = Color.rgb(255, 255, 255);
                             targetFormat = new SimpleDateFormat("dd-MMM-yyyy");
                             try {

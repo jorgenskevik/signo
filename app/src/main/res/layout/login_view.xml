@@ -23,7 +23,7 @@
             android:layout_width="280dp"
             android:layout_height="140dp"
             android:layout_marginTop="45dp"
-            android:src="@drawable/akalogo" />
+            android:src="@drawable/companylogo" />
 
         <TextView
             android:id="@+id/textView11"

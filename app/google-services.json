@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "973471203209",
-    "firebase_url": "https://kortfri-norge-as.firebaseio.com",
-    "project_id": "kortfri-norge-as",
-    "storage_bucket": "kortfri-norge-as.appspot.com"
+    "project_number": "590768208426",
+    "firebase_url": "https://kortfri-norge-as-2.firebaseio.com",
+    "project_id": "kortfri-norge-as-2",
+    "storage_bucket": "kortfri-norge-as-2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:973471203209:android:02dec822a28dd482",
+        "mobilesdk_app_id": "1:590768208426:android:34598b9fe749cbd0",
         "android_client_info": {
-          "package_name": "kortfri.norge.nkfsreal"
+          "package_name": "signo.kortfri"
         }
       },
       "oauth_client": [
         {
-          "client_id": "973471203209-cdq32n2gilcq5vrc9oh2cd8qni40eu0h.apps.googleusercontent.com",
+          "client_id": "590768208426-8jee2i1akrn6ue95g1khccsil88m3t6k.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "kortfri.norge.nkfsreal",
+            "package_name": "signo.kortfri",
             "certificate_hash": "68a126056c122b42f22235d0d07e80cc49f76682"
           }
         },
         {
-          "client_id": "973471203209-pbrbefptf25l6s22e5ebmj0evnfn0sei.apps.googleusercontent.com",
+          "client_id": "590768208426-ggdmn9kgbnmdc0dj3aaipo587e36ni2s.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBm3pTdDXDw6c89RS_MTB3BUKXGAU0Mogs"
+          "current_key": "AIzaSyCjmIxwe8u-bHxe2GL3D_sQdYL8Da0-1zY"
         }
       ],
       "services": {
@@ -40,116 +40,14 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "973471203209-pbrbefptf25l6s22e5ebmj0evnfn0sei.apps.googleusercontent.com",
+              "client_id": "590768208426-ggdmn9kgbnmdc0dj3aaipo587e36ni2s.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "973471203209-jdvta89ktsbo75ihn16hca278oriavff.apps.googleusercontent.com",
+              "client_id": "590768208426-m1da8eddvb58vl986d5efvu6qsv0o04r.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.kortfrinorge.kortfri-nrs"
-              }
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:973471203209:android:67ce0407d4766a3a",
-        "android_client_info": {
-          "package_name": "kortfri.norge.nrsreal"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "973471203209-la3js63tfksb0ua8v1ntii3lrdtman46.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "kortfri.norge.nrsreal",
-            "certificate_hash": "68a126056c122b42f22235d0d07e80cc49f76682"
-          }
-        },
-        {
-          "client_id": "973471203209-pbrbefptf25l6s22e5ebmj0evnfn0sei.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBm3pTdDXDw6c89RS_MTB3BUKXGAU0Mogs"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "973471203209-pbrbefptf25l6s22e5ebmj0evnfn0sei.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "973471203209-jdvta89ktsbo75ihn16hca278oriavff.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.kortfrinorge.kortfri-nrs"
-              }
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:973471203209:android:cdebe1ae2359878c",
-        "android_client_info": {
-          "package_name": "akatrh.kortfrireal"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "973471203209-cigrl949mbn4sjp5j4l4qqddjsli711i.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "akatrh.kortfrireal",
-            "certificate_hash": "68a126056c122b42f22235d0d07e80cc49f76682"
-          }
-        },
-        {
-          "client_id": "973471203209-pbrbefptf25l6s22e5ebmj0evnfn0sei.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBm3pTdDXDw6c89RS_MTB3BUKXGAU0Mogs"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "973471203209-pbrbefptf25l6s22e5ebmj0evnfn0sei.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "973471203209-jdvta89ktsbo75ihn16hca278oriavff.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.kortfrinorge.kortfri-nrs"
+                "bundle_id": "com.kortfrinorge.kortfri-signo"
               }
             }
           ]

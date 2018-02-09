@@ -184,7 +184,12 @@ public class LoginActivity extends AppCompatActivity  implements
                     if (e instanceof FirebaseAuthInvalidCredentialsException) {
                         // Invalid request
                         // [START_EXCLUDE]
-                        mPhoneNumberField.setError("Invalid phone number.");
+                        try {
+                            mPhoneNumberField.setError("Invalid phone number.");
+                        }catch (NullPointerException r){
+                            Toast.makeText(getApplicationContext(), getResources().getString(R.string.internett), Toast.LENGTH_SHORT).show();
+
+                        }
                         // [END_EXCLUDE]
                     } else if (e instanceof FirebaseTooManyRequestsException) {
                         // The SMS quota for the project has been exceeded
@@ -231,7 +236,12 @@ public class LoginActivity extends AppCompatActivity  implements
 
         // [START_EXCLUDE]
         if (mVerificationInProgress && validatePhoneNumber()) {
-            startPhoneNumberVerification(mPhoneNumberField.getText().toString());
+            try {
+                startPhoneNumberVerification(mPhoneNumberField.getText().toString());
+            }catch (NullPointerException e){
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.internett), Toast.LENGTH_SHORT).show();
+
+            }
         }
         // [END_EXCLUDE]
     }
@@ -343,32 +353,51 @@ public class LoginActivity extends AppCompatActivity  implements
         switch (uiState) {
             case STATE_INITIALIZED:
                 // Initialized state, show only the phone number field and start button
-                enableViews(mStartButton, mPhoneNumberField);
-                disableViews(mVerifyButton, mResendButton, mVerificationField);
-                mDetailText.setText(null);
-                break;
+                try {
+                    enableViews(mStartButton, mPhoneNumberField);
+                    disableViews(mVerifyButton, mResendButton, mVerificationField);
+                    mDetailText.setText(null);
+                    break;
+                }catch (NullPointerException e){
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.internett), Toast.LENGTH_SHORT).show();
+                }
+
             case STATE_CODE_SENT:
-                // Code sent state, show the verification field, the
-                enableViews(mVerifyButton, mResendButton, mPhoneNumberField, mVerificationField);
-                disableViews(mStartButton);
-                mDetailText.setText(R.string.status_code_sent);
-                mDetailText.setTextColor(Color.parseColor("#43a047"));
-                break;
+                try {
+                    // Code sent state, show the verification field, the
+                    enableViews(mVerifyButton, mResendButton, mPhoneNumberField, mVerificationField);
+                    disableViews(mStartButton);
+                    mDetailText.setText(R.string.status_code_sent);
+                    mDetailText.setTextColor(Color.parseColor("#43a047"));
+                    break;
+                }catch (NullPointerException e){
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.internett), Toast.LENGTH_SHORT).show();
+                }
             case STATE_VERIFY_FAILED:
-                // Verification has failed, show all options
-                enableViews(mStartButton, mVerifyButton, mResendButton, mPhoneNumberField,
-                        mVerificationField);
-                mDetailText.setText(R.string.status_verification_failed);
-                mDetailText.setTextColor(Color.parseColor("#dd2c00"));
-                progressBar.setVisibility(View.INVISIBLE);
-                break;
+                try {
+                    // Verification has failed, show all options
+                    enableViews(mStartButton, mVerifyButton, mResendButton, mPhoneNumberField,
+                            mVerificationField);
+                    mDetailText.setText(R.string.status_verification_failed);
+                    mDetailText.setTextColor(Color.parseColor("#dd2c00"));
+                    progressBar.setVisibility(View.INVISIBLE);
+                    break;
+                }catch (NullPointerException e){
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.internett), Toast.LENGTH_SHORT).show();
+
+                }
             case STATE_VERIFY_SUCCESS:
-                // Verification has succeeded, proceed to firebase sign in
-                disableViews(mStartButton, mVerifyButton, mResendButton, mPhoneNumberField,
-                        mVerificationField);
-                mDetailText.setText("Verfication Sucessfull");
-                mDetailText.setTextColor(Color.parseColor("#43a047"));
-                progressBar.setVisibility(View.INVISIBLE);
+                try {
+                    // Verification has succeeded, proceed to firebase sign in
+                    disableViews(mStartButton, mVerifyButton, mResendButton, mPhoneNumberField,
+                            mVerificationField);
+                    mDetailText.setText("Verfication Sucessfull");
+                    mDetailText.setTextColor(Color.parseColor("#43a047"));
+                    progressBar.setVisibility(View.INVISIBLE);
+                }catch (NullPointerException e){
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.internett), Toast.LENGTH_SHORT).show();
+
+                }
 
                 // Set the verification text based on the credential
                 if (cred != null) {
@@ -537,7 +566,12 @@ public class LoginActivity extends AppCompatActivity  implements
     private boolean validatePhoneNumber() {
         String phoneNumber = mPhoneNumberField.getText().toString();
         if (TextUtils.isEmpty(phoneNumber)) {
-            mPhoneNumberField.setError("Invalid phone number.");
+            try {
+                mPhoneNumberField.setError("Invalid phone number.");
+
+            }catch (NullPointerException e){
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.internett), Toast.LENGTH_SHORT).show();
+            }
             //mPhoneNumberField.setTextColor(Color.parseColor("#ff1744"));
             return false;
         }
@@ -577,7 +611,11 @@ public class LoginActivity extends AppCompatActivity  implements
 
                 //mStatusText.setText("Authenticating....!");
                 progressBar.setVisibility(View.VISIBLE);
-                startPhoneNumberVerification(mPhoneNumberField.getText().toString());
+                try {
+                    startPhoneNumberVerification(mPhoneNumberField.getText().toString());
+                }catch (NullPointerException e){
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.internett), Toast.LENGTH_SHORT).show();
+                }
 
                 break;
             case R.id.button_verify_phone:
@@ -590,7 +628,11 @@ public class LoginActivity extends AppCompatActivity  implements
                 verifyPhoneNumberWithCode(mVerificationId, code);
                 break;
             case R.id.button_resend:
-                resendVerificationCode(mPhoneNumberField.getText().toString(), mResendToken);
+                try {
+                    resendVerificationCode(mPhoneNumberField.getText().toString(), mResendToken);
+                }catch (NullPointerException e){
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.internett), Toast.LENGTH_SHORT).show();
+                }
                 break;
             case R.id.sign_out_button:
                 signOut();

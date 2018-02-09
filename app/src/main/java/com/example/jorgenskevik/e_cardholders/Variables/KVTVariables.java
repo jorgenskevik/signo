@@ -11,8 +11,8 @@ public class KVTVariables {
     private static String AcceptVersion = "V2";
     private static String TWITTER_KEY = "OwT8vAGt92TMSDRK3O9naZznW";
     private static String TWITTER_SECRET = "PfC1rhbLQ8WSnmJCgqKwyfPZJyjyAoLHzx61sClci42tiiA38R";
-    private static String Appkey = "f0d2ba4dcf0e324603b9d0bacbac070a";
-    private static String BASE_URL = "https://apiakatrh.kortfri.no/";
+    private static String Appkey = "d034dd9794d1159b0a3f734fe5d3dfce";
+    private static String BASE_URL = "https://apisigno.kortfri.no/";
 
     private static String tokenlogin = "";
     private static String userID = "";

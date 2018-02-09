@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Akademiet trh - KortFri</string>
+    <string name="app_name">Signo - KortFri</string>
     <string name="headerTwo">We digitize your school certificates</string>
     <string name="Madewith">Made with</string>
     <string name="forKVT">for</string>
@@ -19,7 +19,7 @@
     <string name="LogginButton">Login</string>
     <string name="digitsfail">Digits login failed</string>
     <string name="CancelBarCode">OK</string>
-    <string name="GiveAccess">"Give the app access: settings/apps/KortFri/Storage"</string>
+    <string name="GiveAccess">"Give the app access: settings/apps/Signo/Permissions"</string>
     <string name="setPicture">Set picture</string>
     <string name="updateProfile">Update</string>
     <string name="DenyPicture">You have already picked a photo</string>
@@ -32,11 +32,11 @@
     <string name="contactIT">Contact IT support</string>
     <string name="signInDigiFail">Login failed</string>
     <string name="studentbevis">STUDENT CARD</string>
-    <string name="companynameLong">Akademiet Trondheim</string>
-    <string name="companyname">Aka trh</string>
+    <string name="companynameLong">SIGNO GRUNN- OG VIDEREGÅENDE SKOLE AS</string>
+    <string name="companyname">Signo</string>
     <string name="GyldigTil">Valid for </string>
     <string name="expired">EXPIRED</string>
-    <string name="studentnumber">Studentnr:</string>
+    <string name="studentnumber">Student Number:</string>
     <string name="Barcode">Barcode:</string>
     <string name="Not">Invalid</string>
     <string name="yourPic">Your picture::</string>
@@ -65,12 +65,14 @@
     <string name="hint_phone_number">Phone Number</string>
     <string name="hint_verification_code">Verification Code</string>
     <string name="status_code_sent">Code Sent</string>
-    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_failed">Connect to internet</string>
     <string name="status_verification_succeeded">Verification succeeded</string>
-    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="status_sign_in_failed">Connect to internet</string>
     <string name="instant_validation">(instant validation)</string>
     <string name="phone_title_text">Phone Number</string>
     <string name="sign_out">Sign out</string>
+    <string name="internett">You need to connect to the internet to login</string>
+
 
 
     <string name="verification">verification successful</string>

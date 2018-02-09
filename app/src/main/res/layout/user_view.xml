@@ -36,7 +36,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/akalogo"
+        android:src="@drawable/companylogo"
         android:layout_alignBottom="@+id/button11"
         android:layout_alignLeft="@+id/companynamePhoto"
         android:layout_alignStart="@+id/companynamePhoto"
